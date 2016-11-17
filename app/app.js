@@ -4,12 +4,23 @@
 angular.module('myApp', [
   'ngRoute',
   'ui.bootstrap',
-  'myApp.view1',
+  'ui.router',
+  'myApp.profile',
   'myApp.view2',
   'myApp.version',
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+]).config(['$locationProvider', '$urlRouterProvider', '$stateProvider',
+  function ($locationProvider, $urlRouterProvider, $stateProvider) {
+    $locationProvider.hashPrefix('!');
+    $urlRouterProvider.otherwise('/view1');
+    $stateProvider
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'profile/profile.html',
+        controller: 'ProfileCtrl'
+      })
+      .state('view2', {
+        url: '/view2',
+        templateUrl: 'view2/view2.html',
+        controller: 'View2Ctrl'
+      });
+  }]);
