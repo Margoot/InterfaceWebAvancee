@@ -11,10 +11,6 @@ angular.module('myApp.view1', ['ngRoute', 'ui.bootstrap'])
 
   .controller('View1Ctrl',
     ['$scope', '$location', function ($scope, $location) {
-      vm = $scope;
 
-      vm.isActive = (viewLocation) => {
-        return viewLocation === $location.path();
-      };
 
     }]);

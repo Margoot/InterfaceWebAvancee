@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<input id="login_username" type="text" placeholder="Username" ng-model="user.username">
-<input id="login_password" type="password" placeholder="Password" ng-model="user.password">
-<button ng-click="login()" >Login</button>
 
-</body>
-</html>
+<div id="login_user">
+    <p>Merci de bien vouloir vous identifier</p>
+    <input type="text" placeholder="Login" ng-model="user.username">
+    <input type="password" placeholder="Password" ng-model="user.password">
+    <button ng-click="login()"> Login </button>
+    <button ng-click="reset()"> Reset </button>
+</div>
+
+
