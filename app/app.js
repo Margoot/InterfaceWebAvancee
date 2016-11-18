@@ -8,8 +8,8 @@ angular.module('myApp', [
   'myApp.profile',
   'myApp.view2',
   'myApp.view1',
-    'myApp.view2',
-    'myApp.login',
+  'myApp.view2',
+  'myApp.login',
   'myApp.version',
 ]).config(['$locationProvider', '$urlRouterProvider', '$stateProvider',
   function ($locationProvider, $urlRouterProvider, $stateProvider) {
@@ -25,5 +25,10 @@ angular.module('myApp', [
         url: '/view2',
         templateUrl: 'view2/view2.html',
         controller: 'View2Ctrl'
+      })
+      .state('/login', {
+        url: '/login',
+        templateUrl: 'login/login.html',
+        controller: 'LoginCtrl'
       });
   }]);
