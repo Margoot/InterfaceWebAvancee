@@ -1,0 +1,40 @@
+#login_body h1
+{
+    font-family: 'qkmarisa';
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 40px;
+    margin-bottom: -10px;
+
+
+}
+
+#login_bouton_login
+{
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*width: 50%;*/
+}
+
+#login_bouton_reset
+{
+
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*width: 50%;*/
+}
