@@ -7,11 +7,14 @@ angular.module('myApp', [
   'ui.router',
   'myApp.profile',
   'myApp.view2',
+  'myApp.view1',
+    'myApp.view2',
+    'myApp.login',
   'myApp.version',
 ]).config(['$locationProvider', '$urlRouterProvider', '$stateProvider',
   function ($locationProvider, $urlRouterProvider, $stateProvider) {
     $locationProvider.hashPrefix('!');
-    $urlRouterProvider.otherwise('/view1');
+    $urlRouterProvider.otherwise('/login');
     $stateProvider
       .state('profile', {
         url: '/profile',
