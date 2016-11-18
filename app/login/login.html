@@ -1,10 +1,21 @@
+<head>
+    <meta charset="utf-8"/>
+</head>
+<h1>IWA 2016 !!!!</h1>
 
-<div id="login_user">
+    <div id="login_user">
     <p>Merci de bien vouloir vous identifier</p>
-    <input type="text" placeholder="Login" ng-model="user.username">
+<form class="list list-inset" id="login_register_form">
+    <label class="item item-input" id="login_email" >
+        <input type="text" placeholder="Login" ng-model="user.username">
+    </label>
+    <label class="item item-input" id="login_password" >
     <input type="password" placeholder="Password" ng-model="user.password">
-    <button ng-click="login()"> Login </button>
-    <button ng-click="reset()"> Reset </button>
+    </label>
+</form>
+        <button class="button button-block button-positive" id="login_bouton_login" ng-click="login()">Login</button>
+        <button class="button button-block button-positive" id="login_bouton_reset" ng-click="reset()">Reset</button>
+
 </div>
 
 
