@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('nespresso', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/view2');
+      browser.get('index.html#!/nespresso');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render nespresso when user navigates to /nespresso', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });

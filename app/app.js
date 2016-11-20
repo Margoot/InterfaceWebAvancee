@@ -6,7 +6,7 @@ angular.module('myApp', [
   'ui.bootstrap',
   'ui.router',
   'myApp.profile',
-  'myApp.view2',
+  'myApp.nespresso',
   'myApp.login',
   'myApp.version',
   'myApp.authService',
@@ -21,10 +21,10 @@ angular.module('myApp', [
         templateUrl: 'profile/profile.html',
         controller: 'ProfileCtrl'
       })
-      .state('navBar.view2', {
-        url: '/view2',
-        templateUrl: 'view2/view2.html',
-        controller: 'View2Ctrl'
+      .state('navBar.nespresso', {
+        url: '/nespresso',
+        templateUrl: 'nespresso/nespresso.html',
+        controller: 'NespressoCtrl'
       })
       .state('login', {
         url: '/login',
