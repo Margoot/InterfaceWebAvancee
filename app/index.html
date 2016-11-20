@@ -23,21 +23,9 @@
           href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
     <link rel="stylesheet" href="app.css">
 
-    <link href="login/login.css" rel="stylesheet">
-
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-app="myApp">
-
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-    <a class="navbar-brand" ui-sref="#">First Angular Exercise</a>
-    </div>
-    <ul class="nav navbar-nav">
-        <li><a ui-sref="profile">Profile</a></li>
-        <li><a ui-sref="view2">Autre onglet</a></li>
-    </ul>
-</nav>
 
 <div class="container">
     <div ui-view></div>
@@ -51,9 +39,10 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="app.js"></script>
 <script src="login/login.js"></script>
-<script src="view1/view1.js"></script>
 <script src="profile/profile.js"></script>
 <script src="view2/view2.js"></script>
+<script src="navBar/navBar.js"></script>
+<script src="login/authService.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>

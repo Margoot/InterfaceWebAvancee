@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-</head>
-<body>
-<div class="jumbotron">
-    <h1>Hello, {user.username}</h1>
-
-    <p>...</p>
-    <p><a class="btn btn-warning btn-lg" href="#" role="button">Logout</a></p>
+<div uib-alert ng-repeat="alert in alerts"
+     ng-class="'alert-' + (alert.type || 'success')"
+     close="closeAlert($index)"
+     dismiss-on-timeout="5000">
+    {{alert.msg}}
 </div>
-</body>
-</html>
+<div class="jumbotron">
+    <h1>Hello, {{user.username}}</h1>
+
+    <p>Welcome in your profile page</p>
+    <br>
+    <p><button class="btn btn-warning btn-lg" type="button" ng-click="logout()" role="button">Logout</button></p>
+</div>

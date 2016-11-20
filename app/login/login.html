@@ -1,21 +1,22 @@
-<head>
-    <meta charset="utf-8"/>
-</head>
-<h1>IWA 2016 !!!!</h1>
 
+<h1>LOGIN</h1>
+<div uib-alert ng-repeat="alert in alerts"
+     ng-class="'alert-' + (alert.type || 'danger')"
+     close="closeAlert($index)"
+     dismiss-on-timeout="6000">
+    {{alert.msg}}
+</div>
     <div id="login_user">
-    <p>Merci de bien vouloir vous identifier</p>
 <form class="list list-inset" id="login_register_form">
     <label class="item item-input" id="login_email" >
         <input type="text" placeholder="Login" ng-model="user.username">
-    </label>
+    </label><br>
     <label class="item item-input" id="login_password" >
     <input type="password" placeholder="Password" ng-model="user.password">
-    </label>
+    </label><br>
+        <button type="submit" class="btn btn-primary" id="login_bouton_login" ng-click="login()">Login</button><br>
+        <button type="reset" class="btn btn-danger" id="login_bouton_reset">Reset</button>
 </form>
-        <button class="button button-block button-positive" id="login_bouton_login" ng-click="login()">Login</button>
-        <button class="button button-block button-positive" id="login_bouton_reset" ng-click="reset()">Reset</button>
-
 </div>
 
 

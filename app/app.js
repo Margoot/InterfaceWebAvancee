@@ -11,24 +11,32 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.login',
   'myApp.version',
+  'myApp.authService',
+  'myApp.navBar',
 ]).config(['$locationProvider', '$urlRouterProvider', '$stateProvider',
   function ($locationProvider, $urlRouterProvider, $stateProvider) {
     $locationProvider.hashPrefix('!');
     $urlRouterProvider.otherwise('/login');
     $stateProvider
-      .state('profile', {
+      .state('navBar.profile', {
         url: '/profile',
         templateUrl: 'profile/profile.html',
         controller: 'ProfileCtrl'
       })
-      .state('view2', {
+      .state('navBar.view2', {
         url: '/view2',
         templateUrl: 'view2/view2.html',
         controller: 'View2Ctrl'
       })
-      .state('/login', {
+      .state('login', {
         url: '/login',
         templateUrl: 'login/login.html',
         controller: 'LoginCtrl'
-      });
+      })
+      .state('navBar', {
+        url: '/navBar',
+        templateUrl: 'navBar/navBar.html',
+        controller: 'NavBarCtrl'
+      })
+
   }]);
