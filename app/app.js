@@ -7,8 +7,6 @@ angular.module('myApp', [
   'ui.router',
   'myApp.profile',
   'myApp.view2',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.login',
   'myApp.version',
   'myApp.authService',

@@ -9,10 +9,10 @@
     <div id="login_user">
 <form class="list list-inset" id="login_register_form">
     <label class="item item-input" id="login_email" >
-        <input type="text" placeholder="Login" ng-model="user.username">
+        <input required type="text" placeholder="Login" ng-model="user.username">
     </label><br>
     <label class="item item-input" id="login_password" >
-    <input type="password" placeholder="Password" ng-model="user.password">
+    <input required type="password" placeholder="Password" ng-model="user.password">
     </label><br>
         <button type="submit" class="btn btn-primary" id="login_bouton_login" ng-click="login()">Login</button><br>
         <button type="reset" class="btn btn-danger" id="login_bouton_reset">Reset</button>
