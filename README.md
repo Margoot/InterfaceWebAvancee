@@ -6,7 +6,7 @@ The goal of this project is to discover the Angular framework. This app allows t
 
 To get you started you can simply clone the project in an ampty folder.
 
-### Clone angular-seed
+### Clone angular app repository
 
 Clone the angular app repository using :
 
@@ -40,8 +40,13 @@ npm start
 Now browse to the app at `http://localhost:8000/index.html`.
 
 ### Log in
-If you want to log in, you can enter this user :
-> username : george
-> password: clooney
+If you want to log in, you can enter this user : <br>
+username : george <br>
+password: clooney <br>
 
 If you want to fail the log in, you can enter whatever you want.
+
+### Authors 
+Guillaume DUBOIS <br>
+Margot LE ROUZIC <br>
+Amaury NORMANDIN
