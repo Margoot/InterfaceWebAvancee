@@ -23,6 +23,5 @@ angular.module('myApp.login', [])
       };
       vm.$on('loginFailed', function() {
         vm.addAlert();
-        console.log(vm.alerts);
       });
     }]);

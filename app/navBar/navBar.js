@@ -7,4 +7,5 @@ angular.module('myApp.navBar', [])
 
   .controller('NavBarCtrl', ['$state', function ($state) {
     $state.go('navBar.profile');
+
   }]);
