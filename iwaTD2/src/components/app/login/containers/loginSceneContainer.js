@@ -5,6 +5,7 @@ import React from 'react';
 import {browserHistory} from 'react-router';
 
 import LoginScene from '../scenes/loginScene';
+import Store from '../../../../store';
 
 export default class LoginSceneContainer extends React.Component {
 
@@ -17,6 +18,11 @@ export default class LoginSceneContainer extends React.Component {
       passwordEntered:''
     }
   }
+
+  componentDidMount() {
+    Store.saveState(this.state.username);
+  }
+
 
   updateUsername(event) {
     this.setState({usernameEntered: event.target.value});

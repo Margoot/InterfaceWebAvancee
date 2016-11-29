@@ -4,7 +4,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import LoginSceneContainer from 'components/app/login/containers/loginSceneContainer';
@@ -16,7 +16,7 @@ render((
   <MuiThemeProvider>
   <Router history={browserHistory}>
     <Route path='/' component={LoginSceneContainer} />
-    <Route path='home' component={HomeSceneContainer}>
+    <Route path='/home' component={HomeSceneContainer}>
       <Route path='/profile' component={ProfileSceneContainer} />
       <Route path='/cards' component={CardsSceneContainer} />
     </Route>

@@ -14,6 +14,10 @@ export default class HomeSceneContainer extends React.Component {
     }
   }
 
+  componentDidMount() {
+    browserHistory.push('/profile');
+  }
+
   render() {
     return (
       <HomeScene
