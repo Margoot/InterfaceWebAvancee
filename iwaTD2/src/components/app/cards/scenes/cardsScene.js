@@ -2,28 +2,29 @@
  * Created by Margot on 28/11/2016.
  */
 import React from 'react';
-import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+import {Card, CardActions, CardHeader} from 'material-ui/Card';
+import FloatingActionButton from 'material-ui/FloatingActionButton';
+import ContentAdd from 'material-ui/svg-icons/content/add';
 import { Modal, Button,InputGroup,FormControl } from 'react-bootstrap';
 
 const CardsScene = (props) => {
   return (
     <div>
+      <div style={{marginLeft: 40}}>
+        <FloatingActionButton onClick={props.openModal} mini={true}>
+          <ContentAdd style={{fontSize:20, color: 'white'}}>+</ContentAdd>
+        </FloatingActionButton>
+      </div>
       {props.name.map((name,i) => (
-        <Card>
+        <Card key={i}>
           <CardHeader style={{textAlign: 'center'}}
             title={name}
           />
           <CardActions style={{textAlign: 'right'}}>
-            <FlatButton labelStyle={{fontSize: 10}} label="Delete"/>
+            <Button key={i} style={{fontSize: 10}} onClick={props.deleteCard({i})}>DELETE</Button>
           </CardActions>
         </Card>
       ))}
-      <Card>
-        <CardActions style={{paddingLeft: 550}}>
-          <FlatButton labelStyle={{fontSize: 30}} label="+" onClick={props.openModal} />
-        </CardActions>
-      </Card>
       <Modal show={props.showModal}>
         <Modal.Header>
           <Modal.Title>Add a card</Modal.Title>

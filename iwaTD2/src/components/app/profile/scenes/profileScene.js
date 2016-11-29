@@ -2,15 +2,17 @@
  * Created by Margot on 28/11/2016.
  */
 import React from 'react';
-import {Jumbotron,Button} from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 
 const ProfileScene = (props) => {
   return (
     <div>
-  <Jumbotron>
-    <h1>Hello, {props.username}!</h1>
-    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  </Jumbotron>
+      <Jumbotron>
+        <h1>Hello, {props.username}!</h1>
+        <p>You are logged ! </p>
+        <p>You have the possibilty to see, edit and create new cards in the
+          cards tab</p>
+      </Jumbotron>
     </div>
   )
 };

@@ -22,10 +22,13 @@ export default class CardsSceneContainer extends React.Component {
   }
 
   addCard() {
-    console.log(this.state.newName);
     this.state.name.push(this.state.newName);
-    console.log(this.state.name);
     this.setState({showModal: false});
+  }
+
+  deleteCard(i) {
+    console.log(i.i);
+    // this.state.name.splice(i,1);
   }
 
   closeModal(){
@@ -46,6 +49,7 @@ export default class CardsSceneContainer extends React.Component {
         addCard={this.addCard.bind(this)}
         openModal={this.openModal.bind(this)}
         updateName={this.updateName.bind(this)}
+        deleteCard={this.deleteCard.bind(this)}
       />
     )
   }
