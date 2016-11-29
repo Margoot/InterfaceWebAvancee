@@ -11,14 +11,13 @@ export default class HomeSceneContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      children: this.props.children
     }
   }
 
   render() {
     return (
       <HomeScene
-        children={this.state.children}
+        children={this.props.children}
       />
     )
   }

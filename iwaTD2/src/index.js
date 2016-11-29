@@ -17,8 +17,8 @@ render((
   <Router history={browserHistory}>
     <Route path='/' component={LoginSceneContainer} />
     <Route path='home' component={HomeSceneContainer}>
-      <Route path='profile' component={ProfileSceneContainer} />
-      <Route path='cards' component={CardsSceneContainer} />
+      <Route path='/profile' component={ProfileSceneContainer} />
+      <Route path='/cards' component={CardsSceneContainer} />
     </Route>
   </Router>
   </MuiThemeProvider>
