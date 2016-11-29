@@ -12,7 +12,7 @@ Clone the angular app repository using :
 
 ```
 git clone https://github.com/Margoot/InterfaceWebAvancee.git
-cd InterfaceWebAvancee
+cd InterfaceWebAvancee/iwaTD1
 ```
 
 ### Install Dependencies
